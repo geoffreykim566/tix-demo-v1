@@ -35,7 +35,7 @@ export default function LoginPage() {
       <div className="max-w-6xl w-full grid md:grid-cols-2 gap-16 items-center">
         <div className="hidden md:block animate-fade-in">
           <div className="font-mono text-xs text-accent tracking-[0.2em] mb-6">
-            [ TICK/EX PROTOCOL v1.0 ]
+            [ TIX PROTOCOL v1.0 ]
           </div>
           <h1 className="text-5xl lg:text-6xl font-sans font-semibold leading-[1.05] tracking-tight mb-6">
             tickets you <span className="text-accent">actually</span> own.
