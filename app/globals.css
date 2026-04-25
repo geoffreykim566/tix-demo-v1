@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+html,
+body {
+  background: #0a0a0b;
+  color: #e8e8ea;
+  font-family: "Geist", system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* subtle grid background */
+.grid-bg {
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.025) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.025) 1px, transparent 1px);
+  background-size: 40px 40px;
+  background-position: center center;
+}
+
+.glow {
+  box-shadow: 0 0 0 1px rgba(0, 229, 184, 0.3), 0 0 20px rgba(0, 229, 184, 0.15);
+}
+
+.glow-strong {
+  box-shadow: 0 0 0 1px rgba(0, 229, 184, 0.5), 0 0 40px rgba(0, 229, 184, 0.25);
+}
+
+/* horizontal scroll hide */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* blinking caret */
+@keyframes blink {
+  0%, 50% { opacity: 1; }
+  51%, 100% { opacity: 0; }
+}
+.caret::after {
+  content: "_";
+  animation: blink 1s step-end infinite;
+  color: #00e5b8;
+  margin-left: 2px;
+}
+
+/* scanline effect on headers */
+.scanline {
+  position: relative;
+  overflow: hidden;
+}
+.scanline::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(transparent 50%, rgba(0, 229, 184, 0.03) 50%);
+  background-size: 100% 4px;
+  pointer-events: none;
+}
+
+/* noise overlay */
+.noise {
+  position: relative;
+}
+.noise::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.4'/%3E%3C/svg%3E");
+  opacity: 0.03;
+  pointer-events: none;
+  mix-blend-mode: overlay;
+}
