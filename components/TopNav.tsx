@@ -46,7 +46,7 @@ export default function TopNav() {
             <div className="w-2 h-2 bg-accent rounded-sm group-hover:animate-pulse" />
           </div>
           <span className="font-mono text-sm font-semibold tracking-tight">
-            tick<span className="text-accent">/</span>ex
+            Ti<span className="text-accent">X</span>
           </span>
         </Link>
 

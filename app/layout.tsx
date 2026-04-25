@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "tick/ex — tokenized ticket exchange",
+  title: "TiX — tokenized ticket exchange",
   description: "Buy, hold, and resell event tickets on your own wallet.",
 };
 

@@ -30,9 +30,9 @@ export type Ticket = {
 };
 
 const KEYS = {
-  user: "tickex:user",
-  wallet: "tickex:wallet",
-  tickets: "tickex:tickets",
+  user: "tix:user",
+  wallet: "tix:wallet",
+  tickets: "tix:tickets",
 } as const;
 
 function safeParse<T>(raw: string | null): T | null {

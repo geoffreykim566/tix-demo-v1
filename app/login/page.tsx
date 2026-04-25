@@ -21,7 +21,7 @@ export default function LoginPage() {
     setTimeout(() => {
       store.setUser({
         username: username || "demo_user",
-        email: email || "demo@tickex.io",
+        email: email || "demo@tix.io",
         createdAt: Date.now(),
         kycVerified: false,
       });

@@ -76,7 +76,7 @@ export default function EventPage() {
           <section>
             <div className="font-mono text-xs text-accent tracking-[0.2em] mb-3">[ ABOUT ]</div>
             <p className="text-fg-dim leading-relaxed text-[15px]">
-              {event.artist} takes the {event.venue} stage for a night of live performance as part of their current tour. Every ticket is minted as a unique token on the tick/ex protocol — fully transferable, verifiable, and yours to keep or resell.
+              {event.artist} takes the {event.venue} stage for a night of live performance as part of their current tour. Every ticket is minted as a unique token on the TiX protocol — fully transferable, verifiable, and yours to keep or resell.
             </p>
           </section>
 

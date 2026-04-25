@@ -110,7 +110,7 @@ export default function CheckoutPage() {
                   <PayOption
                     selected={payMethod === "wallet"}
                     onClick={() => setPayMethod("wallet")}
-                    title="tick/ex Wallet Balance"
+                    title="TiX Wallet Balance"
                     subtitle={`Current balance: $${wallet.balanceUsd.toFixed(2)}`}
                     badge="FASTEST"
                     icon="W"

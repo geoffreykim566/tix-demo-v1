@@ -82,7 +82,7 @@ export default function InventoryPage() {
                   COPY
                 </button>
               </div>
-              <div className="text-xs text-fg-dim">Self-custody · tick/ex network</div>
+              <div className="text-xs text-fg-dim">Self-custody · TiX network</div>
             </div>
             <div className="grid grid-cols-3 gap-6">
               <Metric label="Balance" value={`$${wallet.balanceUsd.toFixed(2)}`} />
